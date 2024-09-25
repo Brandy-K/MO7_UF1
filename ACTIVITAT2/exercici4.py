@@ -1,0 +1,6 @@
+valor1 = int(input("valor 1 : "))
+valor2 = int(input("valor 2 : "))
+print(f"La suma es: {valor1 + valor2}")
+print(f"La resta es: {valor1 - valor2}")
+print(f"La divisio es: {valor1 / valor2}")
+print(f"La multiplicacio es: {valor1 * valor2}")
