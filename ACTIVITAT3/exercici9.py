@@ -1,5 +1,5 @@
 assignatures = ["Math", "Science", "History", "English", "Art", "Physical Education"]
-notes = []
+notes = []   # to store the new notes
 
 for subject in assignatures:
     nota = float(input(f"Enter la nota de {subject}: "))
