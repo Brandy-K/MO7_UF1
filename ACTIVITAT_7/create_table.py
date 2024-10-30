@@ -29,4 +29,4 @@ def create_table():
         print(f"Error creating table: {e}")
 
     finally:
-        cursor.close()  # Close cursor after execution
+        cursor.close()
