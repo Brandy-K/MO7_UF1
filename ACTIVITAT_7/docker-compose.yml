@@ -6,9 +6,9 @@ services:
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=pass_postgres
-      - POSTGRES_USER=user_postgres
+      - POSTGRES_USER=user_postgresp
     ports:
-      - "5430:5430"
+      - "5432:5432"
     volumes:
       - local_pgdata:/var/lib/postgresql/data
   pgadmin:
