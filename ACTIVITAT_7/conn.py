@@ -1,3 +1,4 @@
+# Connection file. Contains database details
 import psycopg2
 
 conn = psycopg2.connect(

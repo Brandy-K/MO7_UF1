@@ -1,5 +1,5 @@
-import psycopg2
-import conn as cn  # Assuming conn.py has the connection setup
+# To create table
+import conn as cn  # For the connection setup
 
 
 def create_table():
@@ -22,7 +22,7 @@ def create_table():
 
         # Execute and commit the table creation
         cursor.execute(create_table_query)
-        connection.commit()  # Commit the changes
+        connection.commit()
         print("Table 'alumnes' created successfully or already exists.")
 
     except Exception as e:
