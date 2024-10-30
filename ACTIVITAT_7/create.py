@@ -1,5 +1,5 @@
 # To create records for the table
-import psycopg2
+
 from psycopg2 import sql
 import conn  # Import connection details
 
