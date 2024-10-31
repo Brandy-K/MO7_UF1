@@ -7,7 +7,7 @@ import conn  # Import connection details
 def insert_records(idAlumne, nomAlumne, curs, cicle, grup, aula):
     try:
         # Use the connection from conn module
-        connection = conn.conn  # Make sure this is the established connection from conn.py
+        connection = conn.conn  # connection from conn.py
         cursor = connection.cursor()
 
         # SQL command to insert a new record
@@ -20,6 +20,6 @@ def insert_records(idAlumne, nomAlumne, curs, cicle, grup, aula):
         connection.commit()
 
     except Exception as e:
-        print(f"Error creating records: {e}")  # Print the exception for better debugging
+        print(f"Error creating records: {e}")  # Print the exception
     finally:
         cursor.close()  # close the cursor

@@ -1,8 +1,9 @@
+# Arxiu que conté una funció que modifica algun camp o tots
 import conn as cn
 from psycopg2 import sql
 
 
-def update_table(idAlumne, nomAlumne):
+def update_table(idAlumne, nomAlumne):  # functions with camps to be updated
     try:
         connection = cn.conn
         cursor = connection.cursor()
@@ -15,7 +16,7 @@ def update_table(idAlumne, nomAlumne):
         connection.commit()
         print("Record updated successfully.")
 
-    except Exception as e:
+    except Exception as e:  # exception in case of an error
         print(f"Error updating records: {e}")
     finally:
         cursor.close()
